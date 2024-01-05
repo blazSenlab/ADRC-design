@@ -45,3 +45,6 @@ between digital and analog signal processing.
 The actuator model represents the transformation of digital control signals into physical actions, 
 crucial for understanding how control inputs result in physical changes in the system.
 [Reference](https://myaidrive.com/?r=c#/home?folder=&file=Porocilo_Blaz_Krivec.pdf&pdfPage=3)
+
+## 9. Role of electrical circuit
+Electrical circuit is used as an actuator, the article provides 2 transfer functions for actuator as there is one with parameters L and R and there is another one writen based on gain and time constant, it is better to use the latter. 
