@@ -31,30 +31,24 @@ Expanding the terms gives us the error dynamics:
 
 Make sure to replace the matrices A, B, and C, the control input u, and the disturbance function f with the specific values or functions from your system when you provide them to ChatGPT.
 
-% Original Error Dynamics (Image 1)
-% These equations represent the behavior of the system in terms of the error dynamics, where the error is the difference between the system state and the reference trajectory.
-\begin{equation}
-\begin{cases}
-\dot{e}(t) = Ae(t) + B_{u}u(t) + B_{f}f(e + r, d(t)) + Ar(t) - \dot{r}(t) \\
-y_{e}(t) = Ce(t) + Cr(t)
-\end{cases}
-\end{equation}
+## Original Error Dynamics (Image 1)
 
-% Introducing New State (Image 2)
-% A new state is introduced to encapsulate the effects of the disturbance, the reference trajectory, and the derivative of the reference. This helps in simplifying the system representation and possibly in the design of control laws.
-\begin{equation}
-\tilde{e}_{n+1}(t) = B_{f}f(x, d(t)) + Ar(t) - \dot{r}(t)
-\end{equation}
-% Here, \tilde{e}_{n+1}(t) is denoted as h(t) to simplify the notation.
+The behavior of the system in terms of the error dynamics is described by the following equations, where the error `e(t)` is the difference between the system state and the reference trajectory:
 
-% New State-Space Model (Image 3)
-% The error dynamics are redefined to include the new state, leading to a modified state-space model. This model now includes the disturbance effects directly in the state representation.
-\begin{equation}
-\begin{cases}
-\dot{\tilde{e}}(t) = \tilde{A}\tilde{e}(t) + B_{u}\tilde{u}(t) + B_{h}h(t) \\
-y_{e}(t) = \tilde{C}\tilde{e}(t) + Cr(t)
-\end{cases}
-\end{equation}
+- Error dynamics equation: `e_dot(t) = A*e(t) + B_u*u(t) + B_f*f(e + r, d(t)) + A*r(t) - r_dot(t)`
+- Output equation: `y_e(t) = C*e(t) + C*r(t)`
 
-% The notation \tilde{A}, \tilde{C}, and B_{h} represents the modified system matrices to include the effects of the new state h(t).
+## Introducing New State (Image 2)
+
+A new state is introduced to simplify the system representation and possibly assist in the design of control laws. It encapsulates the effects of the disturbance, the reference trajectory, and the derivative of the reference:
+
+- New state equation: `e_tilde_n+1(t) = B_f*f(x, d(t)) + A*r(t) - r_dot(t)`
+
+## New State-Space Model (Image 3)
+
+The error dynamics are redefined to include the new state, leading to a modified state-space model that now directly includes the disturbance effects:
+
+- Modified error dynamics: `e_tilde_dot(t) = A_tilde*e_tilde(t) + B_u*u_tilde(t) + B_h*h(t)`
+- Modified output equation: `y_e(t) = C_tilde*e_tilde(t) + C*r(t)`
+
 
