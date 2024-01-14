@@ -2,38 +2,31 @@
 
 ## Original State-Space Model
 
-The original state-space model of the system is given by:
+The original state-space model of the system is given by the following equations:
 
-```math
-\begin{align}
-\dot{x} &= Ax + Bu + B_f f(x,d(t)) \\
-y &= Cx
-\end{align}
+`x_dot = Ax + Bu + Bf * f(x, d(t))`
+`y = Cx`
 
-for what each variable means check the article
+For what each variable means check the article.
 
-## Error equation
+## Error Equation
 
-e(t) = x(t) - r(t)
-\dot{e}(t) = \dot{x}(t) - \dot{r}(t)
+`e(t) = x(t) - r(t)`
+`e_dot(t) = x_dot(t) - r_dot(t)`
 
-substituting \dot{x}(t) from the state space model:
+Substituting `x_dot(t)` from the state-space model:
 
-\dot{e}(t) = (Ax + Bu + B_f f(x,d(t))) - \dot{r}(t)
+`e_dot(t) = (Ax + Bu + Bf * f(x, d(t))) - r_dot(t)`
 
-then we get: 
+Then we get:
 
-\dot{e}(t) = A(e + r) + Bu + B_f f(e + r,d(t)) - \dot{r}(t)
+`e_dot(t) = A*(e + r) + B*u + Bf * f(e + r, d(t)) - r_dot(t)`
 
 Expanding the terms gives us the error dynamics:
 
-\begin{align}
-\dot{e}(t) &= Ae(t) + Bu(t) + B_f f(e + r,d(t)) + A r(t) - \dot{r}(t) \\
-y_e(t) &= Ce(t) + Cr(t)
-\end{align}
+`e_dot(t) = A*e(t) + B*u(t) + Bf * f(e + r, d(t)) + A*r(t) - r_dot(t)`
+`y_e(t) = C*e(t) + C*r(t)`
 
-"Given
-
-a state-space model with matrices A, B, and C, control input u, and disturbance function f depending on the state x and a disturbance d(t), derive the error dynamics equations when the error e(t) is defined as the difference between the system's state x(t) and a reference trajectory r(t). Please show all the steps involved in the derivation."
+"Given a state-space model with matrices A, B, and C, control input u, and disturbance function f depending on the state x and a disturbance d(t), derive the error dynamics equations when the error e(t) is defined as the difference between the system's state x(t) and a reference trajectory r(t). Please show all the steps involved in the derivation."
 
 Make sure to replace the matrices A, B, and C, the control input u, and the disturbance function f with the specific values or functions from your system when you provide them to ChatGPT.
