@@ -106,7 +106,7 @@ i
 \begin{bmatrix}
 \Delta{x} \\
 \Delta{v} \\
-\Delta{i} \\
+\Delta{i}
 \end{bmatrix}
 \end{equation}
 ```
