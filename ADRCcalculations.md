@@ -71,3 +71,6 @@ Coefficient K_LQ is LQ gain for linearized model of system and Gamma is a design
 ```math
 K_{LQ} = R^{-1} B_u^T P
 ```
+```math
+A^T P + P A - P B_{u} R^{-1} B_{u}^T P + Q = 0
+```
