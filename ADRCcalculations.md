@@ -69,5 +69,5 @@ u_D = (B_u^T B_u)^{-1} B_u^T (-\Gamma e - \hat{e}_{n+1})
 ```
 Coefficient K_LQ is LQ gain for linearized model of system and Gamma is a design parameter (non-negative definite matrix), P is a positive definite matrix, which is solution of the Riccati equation, below is firstly equation for LQ gain and below that is a Riccati equation that is used to calculate P
 ```math
-K_{LQ} = R^(-1) B_u^T P
+K_{LQ} = R^{-1} B_u^T P
 ```
