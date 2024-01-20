@@ -64,7 +64,7 @@ m \frac{d^2 \Delta x}{dt^2} = \alpha \Delta i + \beta \Delta x
 ```
 In the first phase we define the states of the system, in our case those are speed of movement of metal body, distance of movement as the second and current as the third, 3 equations of the system are then calculated like this:
 ```math
-\Delta \dot{v} = -\frac{\alpha}{m} \Delta i + \frac{\beta}{m} \Delta x \quad (2.15a)
+\Delta \dot{v} = \frac{\alpha}{m} \Delta i + \frac{\beta}{m} \Delta x \quad (2.15a)
 ```
 ```math
 \Delta \dot{x} = \Delta v \quad (2.15b)
