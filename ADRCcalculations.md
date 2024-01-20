@@ -42,7 +42,7 @@ Next step was to generate a new state that takes into account disturbance and ot
 ```math
 \begin{align*}
 \dot{\tilde{e}}(t) &= \tilde{A}\tilde{e}(t) + \tilde{B}_u u(t) + B_h h \\
-v(t) &= \tilde{C}\tilde{e}(t) + Cr(t)
+y(t) &= \tilde{C}\tilde{e}(t) + Cr(t)
 \end{align*}
 ```
 % Defining h(t)
@@ -60,7 +60,10 @@ L is observer gain matrix and it is calculate so that equation below is Hurwitz:
 There is an assumption that A and Bu are controllable and that \tilde{A} and \tilde{C} are observable. Under those conditions the system is stable. Control effort u is given with this set of equations:
 ```math
 u = u_{LQ} + u_D \\
+```
+```math
 u_{LQ} = -K_{LQ}e(t) \\
+```
+```math
 u_D = (B_u^T B_u)^{-1} B_u^T (-\hat{e} - e_{n+1})
-
 ```
