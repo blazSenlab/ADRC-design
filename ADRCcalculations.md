@@ -57,3 +57,10 @@ L is observer gain matrix and it is calculate so that equation below is Hurwitz:
 ```math
 \tilde{A} - L \tilde{C}
 ```
+There is an assumption that A and Bu are controllable and that \tilde{A} and \tilde{C} are observable. Under those conditions the system is stable. Control effort u is given with this set of equations:
+```math
+u = u_{LQ} + u_D \\
+u_{LQ} = -K_{LQ}e(t) \\
+u_D = (B_u^T B_u)^{-1} B_u^T (-\hat{e} - e_{n+1})
+
+```
