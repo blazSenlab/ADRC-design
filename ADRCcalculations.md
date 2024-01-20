@@ -32,6 +32,6 @@ final error based form:
 ```math
 \begin{cases}
 \dot{e}(t) = Ae + Bu_u + B_f f(e + r, d(t)) + Ar - \dot{r}(t) \\
-v(t) = Ce + Cr
+y(t) = Ce + Cr
 \end{cases}
 ```
