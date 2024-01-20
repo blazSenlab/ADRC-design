@@ -37,14 +37,15 @@ y(t) = Ce + Cr
 ```
 Next step was to generate a new state that takes into account disturbance and other factors like change in idk what doesnt matter, these are the equations: 
 ```math
-% Introducing the new state e_{n+1}(t)
 \text{Let } e_{n+1}(t) = h(t) \text{, then the new state-space model is:}
-
+```
+```math
 \begin{align*}
 \dot{\tilde{e}}(t) &= \tilde{A}\tilde{e}(t) + \tilde{B}_u u(t) + B_h h \\
 v(t) &= \tilde{C}\tilde{e}(t) + Cr(t)
 \end{align*}
-
+```
 % Defining h(t)
+```math
 \text{Where } h(t) = B_f f(e(t) + r(t), d(t)) + Ar(t) - \dot{r}(t) \text{.}
 ```
