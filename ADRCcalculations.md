@@ -49,3 +49,7 @@ v(t) &= \tilde{C}\tilde{e}(t) + Cr(t)
 ```math
 \text{Where } h(t) = B_f f(e(t) + r(t), d(t)) + Ar(t) - \dot{r}(t) \text{.}
 ```
+From this state space equation generalized ESO is designed, this is the equation: 
+```math
+\dot{\hat{e}}(t) = \tilde{A}\hat{e}(t) + \tilde{B}_u u(t) + L\big(y(t) - \tilde{C}\hat{e}(t) - C r(t)\big)
+```
