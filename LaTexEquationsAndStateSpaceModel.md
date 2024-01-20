@@ -98,13 +98,13 @@ i
 \end{equation}
 ```
 ```math
-\being{equation}
-\delta{y} =
+\begin{equation}
+\Delta{y} =
 \begin{bmatrix}
 1 & 0 & 0
 \end{bmatrix}
 \begin{bmatrix}
-\delta{x} \\
-\delta{v} \\
-\delta{i} \\
+\Delta{x} \\
+\Delta{v} \\
+\Delta{i} \\
 \end{bmatrix}
