@@ -12,10 +12,12 @@ y = Cx
 
 The error is defined as the difference between the state and the reference:
 
+```math
 e(t) = x(t) - r(t)
 
 Derivative of an error is:
 
+```math
 \dot{e}(t) = \dot{x}(t) - \dot{r}(t)
 
 We can substitute in derivative x_dot(t) from the original state space model:
