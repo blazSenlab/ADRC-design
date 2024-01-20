@@ -110,3 +110,55 @@ from 3 equations above we can calculate state space equation, which is written a
 \end{bmatrix}
 \end{equation}
 ```
+We can extend the model by adding additional state that represents the disturbance in system, this is the extended state space model: 
+```math
+\[
+\begin{equation}
+\begin{bmatrix}
+\dot{x} \\
+\dot{v} \\
+\dot{i} \\
+\dot{e}_{n+1}
+\end{bmatrix} = 
+\begin{bmatrix}
+0 & 1 & 0 & 0 \\
+\frac{\beta}{m} & 0 & -\frac{\alpha}{m} & 0 \\
+0 & 0 & -\frac{R}{L} & 0 \\
+0 & 0 & 0 & 0
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+v \\
+i \\
+e_{n+1}
+\end{bmatrix} + 
+\begin{bmatrix}
+0 \\
+0 \\
+\frac{1}{L} \\
+0
+\end{bmatrix} u + 
+\begin{bmatrix}
+0 \\
+0 \\
+0 \\
+1
+\end{bmatrix} h(t)
+\end{equation}
+\]
+
+\[
+\begin{equation}
+y =
+\begin{bmatrix}
+1 & 0 & 0 & 0
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+v \\
+i \\
+e_{n+1}
+\end{bmatrix}
+\end{equation}
+\]
+```
