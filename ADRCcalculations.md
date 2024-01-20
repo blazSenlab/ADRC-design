@@ -9,6 +9,7 @@ The state-space model for a system with a disturbance factor is given by:
 \dot{x} = Ax + Bu + B_f f(x, d(t)) \\
 y = Cx
 \end{cases}
+```
 
 The error is defined as the difference between the state and the reference:
 
