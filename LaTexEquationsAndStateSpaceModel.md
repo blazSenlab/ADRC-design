@@ -76,9 +76,9 @@ from 3 equations above we can calculate state space equation, which is written a
 ```math
 \begin{equation}
 \begin{bmatrix}
-\dot{x} \\
-\dot{v} \\
-\dot{i}
+\Delta{\dot{x}} \\
+\Delta{\dot{v}} \\
+\Delta{\dot{i}}
 \end{bmatrix} = 
 \begin{bmatrix}
 0 & 1 & 0 \\
@@ -86,9 +86,9 @@ from 3 equations above we can calculate state space equation, which is written a
 0 & 0 & -\frac{R}{L}
 \end{bmatrix}
 \begin{bmatrix}
-x \\
-v \\
-i
+\Delta{x} \\
+\Delta{v} \\
+\Delta{i}
 \end{bmatrix} + 
 \begin{bmatrix}
 0 \\
