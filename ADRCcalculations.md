@@ -67,7 +67,7 @@ u_{LQ} = -K_{LQ}e(t) \\
 ```math
 u_D = (B_u^T B_u)^{-1} B_u^T (-\Gamma e - \hat{e}_{n+1})
 ```
-Coefficient K_LQ is LQ gain for linearized model of system and Gamma is a design parameter (non-negative definite matrix), P is a positive definite matrix, which is solution of the Riccati equation, below is firstly equation for LQ gain and below that is a Riccati equation that is used to calculate P
+Coefficient K_LQ is LQ gain for linearized model of system and Gamma is a design parameter (non-negative definite matrix), P is a positive definite matrix, which is solution of the Riccati equation, below is firstly equation for LQ gain and below that is a Riccati equation that is used to calculate P: (in the Riccati equation Q and R are positive definite matrices for LQ controller design)
 ```math
 K_{LQ} = R^{-1} B_u^T P
 ```
