@@ -82,7 +82,7 @@ from 3 equations above we can calculate state space equation, which is written a
 \end{bmatrix} = 
 \begin{bmatrix}
 0 & 1 & 0 \\
-\frac{\beta}{m} & 0 & -\frac{\alpha}{m} \\
+\frac{\beta}{m} & 0 & \frac{\alpha}{m} \\
 0 & 0 & -\frac{R}{L}
 \end{bmatrix}
 \begin{bmatrix}
@@ -121,7 +121,7 @@ We can extend the model by adding additional state that represents the disturban
 \end{bmatrix} = 
 \begin{bmatrix}
 0 & 1 & 0 & 0\\
-\frac{\beta}{m} & 0 & -\frac{\alpha}{m} & 0\\
+\frac{\beta}{m} & 0 & \frac{\alpha}{m} & 0\\
 0 & 0 & -\frac{R}{L} & 0
 \end{bmatrix}
 \begin{bmatrix}
