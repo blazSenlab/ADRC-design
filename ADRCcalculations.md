@@ -53,3 +53,7 @@ From this state space equation generalized ESO is designed, this is the equation
 ```math
 \dot{\hat{e}}(t) = \tilde{A}\hat{e}(t) + \tilde{B}_u u(t) + L\big(y(t) - \tilde{C}\hat{e}(t) - C r(t)\big)
 ```
+L is observer gain matrix and it is calculate so that equation below is Hurwitz:
+```math
+\tilde{A} - L \tilde{C}
+```
