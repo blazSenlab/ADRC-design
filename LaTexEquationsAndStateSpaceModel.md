@@ -1,7 +1,7 @@
 # Equations for linear model of the system:
 
 % Saved Latex equations for later use with chat gpt
-
+```math
 F_g - F_m = ma
 
 mg - F_m = ma
@@ -68,6 +68,6 @@ i
 \frac{1}{L}
 \end{bmatrix} u
 \end{equation}
-
+```
 
 
