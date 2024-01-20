@@ -65,5 +65,5 @@ u = u_{LQ} + u_D \\
 u_{LQ} = -K_{LQ}e(t) \\
 ```
 ```math
-u_D = (B_u^T B_u)^{-1} B_u^T (-\Gamma e - \hat{e_{n+1}})
+u_D = (B_u^T B_u)^{-1} B_u^T (-\Gamma e - \hat{e}_{n+1})
 ```
