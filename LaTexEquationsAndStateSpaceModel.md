@@ -122,7 +122,8 @@ We can extend the model by adding additional state that represents the disturban
 \begin{bmatrix}
 0 & 1 & 0 & 0\\
 \frac{\beta}{m} & 0 & \frac{\alpha}{m} & 0\\
-0 & 0 & -\frac{R}{L} & 0
+0 & 0 & -\frac{R}{L} & 1\\
+0 & 0 & 0 & 0
 \end{bmatrix}
 \begin{bmatrix}
 \Delta{x} \\
