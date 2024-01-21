@@ -110,7 +110,7 @@ from 3 equations above we can calculate state space equation, which is written a
 \end{bmatrix}
 \end{equation}
 ```
-We can extend the model by adding additional state that represents the disturbance in system, this is the extended state space model: 
+We can extend the model by adding additional state that represents the disturbance in system, in this process we need to select which states are effected by disturbance. In my first try I will add disturbance to the state of current as disturbance will most likely come from the electric circuit and not from air current as this system is placed in laboratory and there arent many disturbances in the air. Current also effects movement and speed of movement, but as this is already modeled in equations we dont need to add any additional disturbances to these two states
 ```math
 \begin{equation}
 \begin{bmatrix}
